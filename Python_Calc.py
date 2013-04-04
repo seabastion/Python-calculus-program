@@ -23,7 +23,12 @@ if function == "Derivative" or function == "derivative" or function == "derivati
         coe1 = float(raw_input("What is the first coefficient?  If no coefficient, type \"1\": "))
         exp1 = float(raw_input("what is the first exponent?  If no exponent, type \"1\": "))
         coe2 = float(raw_input("What is the second coefficient?  If no coefficient, type \"1\": "))
-        exp2 = float
+        exp2 = float(raw_input("What is the second exponent?  If no exponent, type \"1\": "))
+        coe1a = coe1 * exp1
+        exp1a = exp1 - 1
+        coe2a = coe2 * exp1
+        exp2a = exp2 - 1
+        print "original equation: " + str(coe1) + "X^" + str(exp1) + "+" + str(coe2) + "X^" + str(exp2)
         
     #coex, X^, expx
     #coex + expx, X^, expx - 1
@@ -33,4 +38,4 @@ elif function == "Antiderivatie" or function == "antiderivative":
 elif function == "Definite Integral" or function == "Definite integral" or function == "definite integral":
     print "Sorry, the definite integrals function is currently unavailable."
 else:
-    print "What are you trying to pull here?  Ain't nobody got time for that!"
+    print "Sorry, we cannot do that.  Please start over."
