@@ -5,21 +5,21 @@ function = raw_input("What will you do? ")
 
 if function == "Derivative" or function == "derivative" or function == "derivatives" or function == "Derivatives":
     terms = int(raw_input("how many terms are there in the function?"))
-    while terms>0
+    while terms>0:
         coe = float(raw_input("What is the coefficient of the first term?  If no coefficient, type \"1\": "))
         exp = float(raw_input("What is the exponent?  If none, type \"1\", if no variable, type \"0\": "))
-        coea = coe * exp
-        expa = exp - 1
+        coe1 = coe * exp
+        exp1 = exp - 1
         print "original equation: " + str(coe) + "X^" + str(exp)
         rand = raw_input("Is this correct? ")
         if rand == "yes" or rand == "Yes":
-            if expa == 1:
-                print "the derivative is: " + str(coea) + "X"
+            if exp1 == 1:
+                print "the derivative is: " + str(coe1) + "X"
             else:
-                print "the derivative is: " + str(coea) + "X^" + str(expa)
+                print "the derivative is: " + str(coe1) + "X^" + str(exp1)
         else:
             print "Sorry.  Please start over."
-        
+        terms-=1
         
     #coex, X^, expx
     #coex + expx, X^, expx - 1
